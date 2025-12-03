@@ -1,0 +1,5 @@
+{
+  "colors": ["red", "green", "blue"],
+  "values": [10, 20, 30, 40],
+  "booleans": [true, false, true]
+}

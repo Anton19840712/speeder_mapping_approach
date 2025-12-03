@@ -1,0 +1,40 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "orderId", "TokenType": 6, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "id", "TokenType": 6, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "product", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "itemName", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "quantity", "TokenType": 6, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "count", "TokenType": 6, "Index": 2 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "departments", "TokenType": 2, "Index": 1 },
+        { "Key": "deptName", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "divisions", "TokenType": 2, "Index": 1 },
+        { "Key": "divisionName", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "departments", "TokenType": 2, "Index": 1 },
+        { "Key": "employees", "TokenType": 2, "Index": 2 },
+        { "Key": "empName", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "divisions", "TokenType": 2, "Index": 1 },
+        { "Key": "staff", "TokenType": 2, "Index": 2 },
+        { "Key": "staffName", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "departments", "TokenType": 2, "Index": 1 },
+        { "Key": "employees", "TokenType": 2, "Index": 2 },
+        { "Key": "role", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "divisions", "TokenType": 2, "Index": 1 },
+        { "Key": "staff", "TokenType": 2, "Index": 2 },
+        { "Key": "position", "TokenType": 8, "Index": 3 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "data": {
+    "presentValue": "I exist",
+    "nullValue": null,
+    "emptyString": "",
+    "zeroNumber": 0,
+    "falseBoolean": false
+  }
+}

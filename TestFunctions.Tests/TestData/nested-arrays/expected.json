@@ -1,0 +1,17 @@
+{
+  "divisions": [
+    {
+      "divisionName": "Engineering",
+      "staff": [
+        { "staffName": "Alice", "position": "Developer" },
+        { "staffName": "Bob", "position": "Architect" }
+      ]
+    },
+    {
+      "divisionName": "Sales",
+      "staff": [
+        { "staffName": "Charlie", "position": "Manager" }
+      ]
+    }
+  ]
+}

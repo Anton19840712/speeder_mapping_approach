@@ -1,0 +1,24 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 2, "Index": 0 },
+        { "Key": "id", "TokenType": 6, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 2, "Index": 0 },
+        { "Key": "code", "TokenType": 6, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 2, "Index": 0 },
+        { "Key": "value", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 2, "Index": 0 },
+        { "Key": "text", "TokenType": 8, "Index": 1 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "orders": [
+    {
+      "orderId": 1001,
+      "product": "Laptop",
+      "quantity": 2
+    },
+    {
+      "orderId": 1002,
+      "product": "Mouse",
+      "quantity": 5
+    },
+    {
+      "orderId": 1003,
+      "product": "Keyboard",
+      "quantity": 3
+    }
+  ]
+}

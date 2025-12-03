@@ -1,0 +1,54 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "имя", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "firstName", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "фамилия", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "lastName", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "город", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "city", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "data with spaces", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "spacedKey", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "special!@#$%", "TokenType": 6, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "specialKey", "TokenType": 6, "Index": 1 }
+      ]
+    }
+  ]
+}

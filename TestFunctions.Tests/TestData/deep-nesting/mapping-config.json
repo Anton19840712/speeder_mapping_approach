@@ -1,0 +1,44 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "level1", "TokenType": 1, "Index": 1 },
+        { "Key": "level2", "TokenType": 1, "Index": 2 },
+        { "Key": "level3", "TokenType": 1, "Index": 3 },
+        { "Key": "level4", "TokenType": 1, "Index": 4 },
+        { "Key": "level5", "TokenType": 1, "Index": 5 },
+        { "Key": "deepValue", "TokenType": 8, "Index": 6 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "a", "TokenType": 1, "Index": 1 },
+        { "Key": "b", "TokenType": 1, "Index": 2 },
+        { "Key": "c", "TokenType": 1, "Index": 3 },
+        { "Key": "d", "TokenType": 1, "Index": 4 },
+        { "Key": "e", "TokenType": 1, "Index": 5 },
+        { "Key": "text", "TokenType": 8, "Index": 6 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "level1", "TokenType": 1, "Index": 1 },
+        { "Key": "level2", "TokenType": 1, "Index": 2 },
+        { "Key": "level3", "TokenType": 1, "Index": 3 },
+        { "Key": "level4", "TokenType": 1, "Index": 4 },
+        { "Key": "level5", "TokenType": 1, "Index": 5 },
+        { "Key": "deepNumber", "TokenType": 6, "Index": 6 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "a", "TokenType": 1, "Index": 1 },
+        { "Key": "b", "TokenType": 1, "Index": 2 },
+        { "Key": "c", "TokenType": 1, "Index": 3 },
+        { "Key": "d", "TokenType": 1, "Index": 4 },
+        { "Key": "e", "TokenType": 1, "Index": 5 },
+        { "Key": "num", "TokenType": 6, "Index": 6 }
+      ]
+    }
+  ]
+}

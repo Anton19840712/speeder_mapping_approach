@@ -1,0 +1,12 @@
+{
+  "person": {
+    "name": {
+      "first": null,
+      "last": null
+    },
+    "contacts": {
+      "emailAddress": null,
+      "phoneNumber": null
+    }
+  }
+}

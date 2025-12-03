@@ -1,0 +1,24 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "id", "TokenType": 6, "Index": 1 }],
+      "OutputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "identifier", "TokenType": 6, "Index": 1 }]
+    },
+    {
+      "InputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "name", "TokenType": 8, "Index": 1 }],
+      "OutputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "title", "TokenType": 8, "Index": 1 }]
+    },
+    {
+      "InputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "email", "TokenType": 8, "Index": 1 }],
+      "OutputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "contact", "TokenType": 8, "Index": 1 }]
+    },
+    {
+      "InputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "isActive", "TokenType": 9, "Index": 1 }],
+      "OutputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "active", "TokenType": 9, "Index": 1 }]
+    },
+    {
+      "InputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "balance", "TokenType": 7, "Index": 1 }],
+      "OutputPath": [{ "Key": "", "TokenType": 1, "Index": 0 }, { "Key": "amount", "TokenType": 7, "Index": 1 }]
+    }
+  ]
+}

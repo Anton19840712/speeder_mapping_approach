@@ -1,0 +1,7 @@
+{
+  "id": 42,
+  "name": "Test User",
+  "email": "test@example.com",
+  "isActive": true,
+  "balance": 123.45
+}

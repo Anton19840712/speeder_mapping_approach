@@ -1,0 +1,60 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "user", "TokenType": 1, "Index": 1 },
+        { "Key": "profile", "TokenType": 1, "Index": 2 },
+        { "Key": "firstName", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "person", "TokenType": 1, "Index": 1 },
+        { "Key": "name", "TokenType": 1, "Index": 2 },
+        { "Key": "first", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "user", "TokenType": 1, "Index": 1 },
+        { "Key": "profile", "TokenType": 1, "Index": 2 },
+        { "Key": "lastName", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "person", "TokenType": 1, "Index": 1 },
+        { "Key": "name", "TokenType": 1, "Index": 2 },
+        { "Key": "last", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "user", "TokenType": 1, "Index": 1 },
+        { "Key": "contact", "TokenType": 1, "Index": 2 },
+        { "Key": "email", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "person", "TokenType": 1, "Index": 1 },
+        { "Key": "contacts", "TokenType": 1, "Index": 2 },
+        { "Key": "emailAddress", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "user", "TokenType": 1, "Index": 1 },
+        { "Key": "contact", "TokenType": 1, "Index": 2 },
+        { "Key": "phone", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "person", "TokenType": 1, "Index": 1 },
+        { "Key": "contacts", "TokenType": 1, "Index": 2 },
+        { "Key": "phoneNumber", "TokenType": 8, "Index": 3 }
+      ]
+    }
+  ]
+}

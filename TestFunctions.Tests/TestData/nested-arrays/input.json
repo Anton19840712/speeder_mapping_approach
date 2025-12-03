@@ -1,0 +1,17 @@
+{
+  "departments": [
+    {
+      "deptName": "Engineering",
+      "employees": [
+        { "empName": "Alice", "role": "Developer" },
+        { "empName": "Bob", "role": "Architect" }
+      ]
+    },
+    {
+      "deptName": "Sales",
+      "employees": [
+        { "empName": "Charlie", "role": "Manager" }
+      ]
+    }
+  ]
+}

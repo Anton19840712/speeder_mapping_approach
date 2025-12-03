@@ -1,0 +1,7 @@
+{
+  "identifier": 42,
+  "title": "Test User",
+  "contact": "test@example.com",
+  "active": true,
+  "amount": 123.45
+}

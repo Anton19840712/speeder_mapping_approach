@@ -1,0 +1,9 @@
+{
+  "result": {
+    "present": "I exist",
+    "wasNull": null,
+    "wasEmpty": "",
+    "wasZero": 0,
+    "wasFalse": false
+  }
+}

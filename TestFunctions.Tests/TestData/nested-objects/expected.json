@@ -1,0 +1,12 @@
+{
+  "person": {
+    "name": {
+      "first": "John",
+      "last": "Doe"
+    },
+    "contacts": {
+      "emailAddress": "john@example.com",
+      "phoneNumber": "123-456-7890"
+    }
+  }
+}

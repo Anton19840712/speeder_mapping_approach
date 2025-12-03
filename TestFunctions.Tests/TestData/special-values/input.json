@@ -1,0 +1,9 @@
+{
+  "bigInteger": 9007199254740993,
+  "negativeNumber": -999999,
+  "floatPrecision": 3.141592653589793,
+  "scientificNotation": 1.5e10,
+  "dateString": "2024-12-03T15:30:00Z",
+  "emptyString": "",
+  "longText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+}

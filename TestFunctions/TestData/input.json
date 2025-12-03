@@ -1,0 +1,87 @@
+{
+  "id": 42,
+  "name": "АлексейИванов",
+  "email": "alexey@example.com",
+  "isVerified": true,
+  "subscription": null,
+  "balance": -1234.56,
+  "metadata": {
+    "tags": ["user", "premium", "beta"],
+    "preferences": {
+      "theme": "dark",
+      "language": "ru-RU",
+      "notifications": {
+        "email": true,
+        "push": false,
+        "sms": null
+      },
+      "limits": {
+        "maxUploads": 100,
+        "storageGb": 15.5
+      }
+    },
+    "lastLogin": "2025-11-27T14:30:00Z"
+  },
+  "addresses": [
+    {
+      "type": "home",
+      "street": "ул.Ленина,д.10",
+      "city": "Москва",
+      "country": "Россия",
+      "coordinates": {
+        "lat": 55.7558,
+        "lng": 37.6176
+      },
+      "isPrimary": true
+    },
+    {
+      "type": "work",
+      "street": "пр.Мира,152",
+      "city": "Санкт-Петербург",
+      "country": "Россия",
+      "coordinates": {
+        "lat": 59.9343,
+        "lng": 30.3351
+      },
+      "isPrimary": false
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "ORD-20251127-001",
+      "items": [
+        {
+          "productId": "PROD-789",
+          "name": "НоутбукXYZ",
+          "price": 89999.99,
+          "quantity": 1,
+          "tags": ["electronics", "laptop"],
+          "specs": {
+            "cpu": "Inteli7",
+            "ram": "16GB",
+            "os": "Windows11"
+          }
+        },
+        {
+          "productId": "PROD-456",
+          "name": "Мышьбеспроводная",
+          "price": 1499,
+          "quantity": 2,
+          "tags": ["accessory"],
+          "specs": null
+        }
+      ],
+      "total": 92997.99,
+      "status": "shipped",
+      "notes": ""
+    }
+  ],
+  "emptyArray": [],
+  "emptyObject": {},
+  "nullableField": null,
+  "unicodeTest": "𝄞🪐こんにちはПривет!123🇷🇺🇺🇸",
+  "scientificNotation": 0.000123,
+  "largeInteger": 9007199254740991,
+  "negativeZero": 0,
+  "booleanArray": [true, false, true]
+}

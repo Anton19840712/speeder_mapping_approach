@@ -1,0 +1,69 @@
+{
+  "identifier": null,
+  "title": null,
+  "contact": null,
+  "isActive": null,
+  "optionalValue": null,
+  "amount": null,
+  "details": {
+    "labels": [],
+    "config": {
+      "mode": null,
+      "locale": null,
+      "alerts": {
+        "email": null,
+        "mobile": null,
+        "desktop": null
+      },
+      "quotas": {
+        "maxItems": null,
+        "volumeGb": null
+      }
+    },
+    "lastUpdate": null,
+    "specialText": null
+  },
+  "locations": [
+    {
+      "category": null,
+      "addressLine": null,
+      "town": null,
+      "region": null,
+      "geo": {
+        "latitude": null,
+        "longitude": null
+      },
+      "isDefault": null
+    }
+  ],
+  "records": [
+    {
+      "recordId": null,
+      "entries": [
+        {
+          "entryId": null,
+          "label": null,
+          "cost": null,
+          "count": null,
+          "flags": [],
+          "attributes": {
+            "processor": null,
+            "memory": null,
+            "system": null
+          }
+        }
+      ],
+      "sum": null,
+      "state": null,
+      "memo": null
+    }
+  ],
+  "emptyList": [],
+  "emptyMap": {},
+  "nullableProperty": null,
+  "textSample": null,
+  "exponent": null,
+  "bigId": null,
+  "signedZero": null,
+  "flags": []
+}

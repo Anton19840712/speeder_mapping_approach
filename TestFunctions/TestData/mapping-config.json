@@ -1,0 +1,490 @@
+{
+  "Dependencies": [
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "id", "TokenType": 6, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "identifier", "TokenType": 6, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "name", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "title", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "email", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "contact", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "isVerified", "TokenType": 9, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "isActive", "TokenType": 9, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "subscription", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "optionalValue", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "balance", "TokenType": 7, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "amount", "TokenType": 7, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "tags", "TokenType": 2, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "labels", "TokenType": 2, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "theme", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "mode", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "language", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "locale", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "notifications", "TokenType": 1, "Index": 3 },
+        { "Key": "email", "TokenType": 9, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "alerts", "TokenType": 1, "Index": 3 },
+        { "Key": "email", "TokenType": 9, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "notifications", "TokenType": 1, "Index": 3 },
+        { "Key": "push", "TokenType": 9, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "alerts", "TokenType": 1, "Index": 3 },
+        { "Key": "mobile", "TokenType": 9, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "notifications", "TokenType": 1, "Index": 3 },
+        { "Key": "sms", "TokenType": 9, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "alerts", "TokenType": 1, "Index": 3 },
+        { "Key": "desktop", "TokenType": 9, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "limits", "TokenType": 1, "Index": 3 },
+        { "Key": "maxUploads", "TokenType": 6, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "quotas", "TokenType": 1, "Index": 3 },
+        { "Key": "maxItems", "TokenType": 6, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "preferences", "TokenType": 1, "Index": 2 },
+        { "Key": "limits", "TokenType": 1, "Index": 3 },
+        { "Key": "storageGb", "TokenType": 7, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "config", "TokenType": 1, "Index": 2 },
+        { "Key": "quotas", "TokenType": 1, "Index": 3 },
+        { "Key": "volumeGb", "TokenType": 7, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "metadata", "TokenType": 1, "Index": 1 },
+        { "Key": "lastLogin", "TokenType": 11, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "details", "TokenType": 1, "Index": 1 },
+        { "Key": "lastUpdate", "TokenType": 11, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "type", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "category", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "street", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "addressLine", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "city", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "town", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "country", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "region", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "coordinates", "TokenType": 1, "Index": 2 },
+        { "Key": "lat", "TokenType": 7, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "geo", "TokenType": 1, "Index": 2 },
+        { "Key": "latitude", "TokenType": 7, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "coordinates", "TokenType": 1, "Index": 2 },
+        { "Key": "lng", "TokenType": 7, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "geo", "TokenType": 1, "Index": 2 },
+        { "Key": "longitude", "TokenType": 7, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "addresses", "TokenType": 2, "Index": 1 },
+        { "Key": "isPrimary", "TokenType": 9, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "locations", "TokenType": 2, "Index": 1 },
+        { "Key": "isDefault", "TokenType": 9, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "orderId", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 2 },
+        { "Key": "recordId", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "total", "TokenType": 7, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "sum", "TokenType": 7, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "status", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "state", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "notes", "TokenType": 8, "Index": 2 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "memo", "TokenType": 8, "Index": 2 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "productId", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "entryId", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "name", "TokenType": 8, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "label", "TokenType": 8, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "price", "TokenType": 7, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "cost", "TokenType": 7, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "quantity", "TokenType": 6, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "count", "TokenType": 6, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "tags", "TokenType": 2, "Index": 3 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "flags", "TokenType": 2, "Index": 3 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "specs", "TokenType": 1, "Index": 3 },
+        { "Key": "cpu", "TokenType": 8, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "attributes", "TokenType": 1, "Index": 3 },
+        { "Key": "processor", "TokenType": 8, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "specs", "TokenType": 1, "Index": 3 },
+        { "Key": "ram", "TokenType": 8, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "attributes", "TokenType": 1, "Index": 3 },
+        { "Key": "memory", "TokenType": 8, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "orders", "TokenType": 2, "Index": 1 },
+        { "Key": "items", "TokenType": 2, "Index": 2 },
+        { "Key": "specs", "TokenType": 1, "Index": 3 },
+        { "Key": "os", "TokenType": 8, "Index": 4 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "records", "TokenType": 2, "Index": 1 },
+        { "Key": "entries", "TokenType": 2, "Index": 2 },
+        { "Key": "attributes", "TokenType": 1, "Index": 3 },
+        { "Key": "system", "TokenType": 8, "Index": 4 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "unicodeTest", "TokenType": 8, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "textSample", "TokenType": 8, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "scientificNotation", "TokenType": 7, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "exponent", "TokenType": 7, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "negativeZero", "TokenType": 6, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "signedZero", "TokenType": 6, "Index": 1 }
+      ]
+    },
+    {
+      "InputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "booleanArray", "TokenType": 2, "Index": 1 }
+      ],
+      "OutputPath": [
+        { "Key": "", "TokenType": 1, "Index": 0 },
+        { "Key": "flags", "TokenType": 2, "Index": 1 }
+      ]
+    }
+  ]
+}

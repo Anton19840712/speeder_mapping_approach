@@ -14,4 +14,10 @@
     <PackageReference Include="OneOf.SourceGenerator" Version="3.0.271" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="TestData\*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

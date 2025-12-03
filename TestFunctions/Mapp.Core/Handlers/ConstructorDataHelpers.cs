@@ -111,11 +111,11 @@ namespace TestFunctions.Mapp.Core.Handlers
                         return true;
                     case JTokenType.Integer:
                         jTokenType = JTokenType.Integer;
-                        value = token.Value<int>();
+                        value = token.Value<long>();  // long для поддержки больших чисел
                         return true;
                     case JTokenType.Float:
                         jTokenType = JTokenType.Float;
-                        value = token.Value<float>();
+                        value = token.Value<double>();  // double для точности
                         return true;
                     case JTokenType.Boolean:
                         jTokenType = JTokenType.Boolean;
@@ -229,6 +229,8 @@ namespace TestFunctions.Mapp.Core.Handlers
                 case BPMField field:
                     if (field.Value != null)
                         outToken = field.Value.ConstructJToken();
+                    else if (field.TypeField == JTokenType.Null)
+                        outToken = JValue.CreateNull();
 
                     return outToken!;
                 case BPMObject @object:
@@ -237,6 +239,8 @@ namespace TestFunctions.Mapp.Core.Handlers
                     {
                         if (field.Value != null)
                             ((JObject)outToken).Add(field.Key.GetCurrentKey(), field.ConstructJToken());
+                        else if (field.TypeField == JTokenType.Null)
+                            ((JObject)outToken).Add(field.Key.GetCurrentKey(), JValue.CreateNull());
                     }
                     return outToken;
                 case BPMList<BPMField> fieldList:
@@ -274,8 +278,14 @@ namespace TestFunctions.Mapp.Core.Handlers
             if (pathElems.Length > 0)
                 currentPath = pathElems.Last();
 
-            if (currentPath.EndsWith("]"))
+            // Обработка ключей со спецсимволами: ['key with spaces'] -> key with spaces
+            if (currentPath.StartsWith("['") && currentPath.EndsWith("']"))
             {
+                currentPath = currentPath.Substring(2, currentPath.Length - 4);
+            }
+            else if (currentPath.EndsWith("]"))
+            {
+                // Обработка массивов: key[0] -> key
                 string[] arrayStruct = currentPath.Split("[");
 
                 if (arrayStruct.Length > 0)
@@ -960,14 +970,12 @@ namespace TestFunctions.Mapp.Core.Handlers
                 Elements = new List<BPMObject>()
             };
 
-            if (source.Elements != null)
+            // Клонируем только первый элемент как шаблон, а не все элементы
+            if (source.Elements != null && source.Elements.Any())
             {
                 var elements = clone.Elements as List<BPMObject>;
-                int idx = 0;
-                foreach (var elem in source.Elements)
-                {
-                    elements!.Add(CloneBPMObject(elem, idx++));
-                }
+                var template = source.Elements.First();
+                elements!.Add(CloneBPMObject(template, 0));
             }
 
             return clone;
@@ -981,19 +989,17 @@ namespace TestFunctions.Mapp.Core.Handlers
                 Elements = new List<BPMField>()
             };
 
-            if (source.Elements != null)
+            // Клонируем только первый элемент как шаблон
+            if (source.Elements != null && source.Elements.Any())
             {
                 var elements = clone.Elements as List<BPMField>;
-                int idx = 0;
-                foreach (var elem in source.Elements)
+                var template = source.Elements.First();
+                elements!.Add(new BPMField
                 {
-                    elements!.Add(new BPMField
-                    {
-                        Key = UpdateKeyIndex(elem.Key, idx++),
-                        TypeField = elem.TypeField,
-                        Value = null
-                    });
-                }
+                    Key = UpdateKeyIndex(template.Key, 0),
+                    TypeField = template.TypeField,
+                    Value = null
+                });
             }
 
             return clone;

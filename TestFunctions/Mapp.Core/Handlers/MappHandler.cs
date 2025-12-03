@@ -23,17 +23,17 @@ namespace TestFunctions.Mapp.Core.Handlers
             {
                 JArray inputData = JArray.Parse(json);
 
-				if (inputData.ConstructBPMObject() is List<BPMField> aStruct)
-				{
-					Console.WriteLine($"ObjectResult:\n{JsonConvert.SerializeObject(aStruct)}");
-					return aStruct;
-				}
-				if (inputData.ConstructBPMObject() is List<BPMObject> aoStruct)
-				{
-					Console.WriteLine($"ObjectResult:\n{JsonConvert.SerializeObject(aoStruct)}");
-					return aoStruct;
-				}
-			}
+                if (inputData.ConstructBPMObject() is BPMList<BPMField> aStruct)
+                {
+                    Console.WriteLine($"ObjectResult:\n{JsonConvert.SerializeObject(aStruct)}");
+                    return aStruct;
+                }
+                if (inputData.ConstructBPMObject() is BPMList<BPMObject> aoStruct)
+                {
+                    Console.WriteLine($"ObjectResult:\n{JsonConvert.SerializeObject(aoStruct)}");
+                    return aoStruct;
+                }
+            }
 
             return null;
         }

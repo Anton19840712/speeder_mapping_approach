@@ -47,58 +47,37 @@ namespace TestFunctions.Mapp.Core.Handlers
         }
         public object? MappData(object inputData, object outputStruct, MappConfig mappConfig)
         {
-            Console.WriteLine("###########_InputFields_Start_###############");
-            #region
-            //foreach (var dependency in mappConfig.Dependencies)
-            //{
-            //    try
-            //    {
-            //        Console.WriteLine(
-            //            $"\n****____NEXT_DEPENDENCY[{mappConfig.Dependencies.IndexOf(dependency)}]____****"
-            //            );
-            //        if (dependency.InputPath == null) continue;
+            Console.WriteLine("###########_Mapping_Start_###############");
 
-            //        var result = inputData.GetValueStruct(dependency.InputPath);
+            // Объект синхронизации для потокобезопасной записи
+            var syncLock = new object();
 
-            //        Console.WriteLine($"Source_Result - {dependency.GetFullInputPath()}: {result}");
-            //        IEnumerable<object?>? results = result.GetValue()?.ToList();
-            //        if (results == null) continue;
-            //        foreach (var r in results) 
-            //        {
-            //            Console.WriteLine($"Prepared_Result - {dependency.GetFullInputPath()}[{results.ToList().IndexOf(r)}]: {r}");
-            //        }
-            //    }
-            //    catch (Exception ex)
-            //    {
-            //        Console.WriteLine($"Exception: {ex.Message}\n{ex.StackTrace}\n{ex.InnerException?.Message}\n{ex.InnerException?.Message}");
-            //    }
-            //}
-            #endregion
             Parallel.ForEach(mappConfig.Dependencies, dependency =>
             {
                 try
                 {
-                    Console.WriteLine(
-                        $"\n****____DEPENDENCY[{mappConfig.Dependencies.IndexOf(dependency)}]____****"
-                        );
-                    if (dependency.InputPath == null) return;
+                    if (dependency.InputPath == null || dependency.OutputPath == null) return;
 
-                    var result = inputData.GetValueStruct(dependency.InputPath);
+                    // Получаем значения с индексами из входных данных
+                    var valuesWithIndices = inputData.GetValuesWithIndices(dependency.InputPath);
 
-               //     Console.WriteLine($"Source_Result_[{mappConfig.Dependencies.IndexOf(dependency)}] - {dependency.GetFullInputPath()}: {result}");
-                    IEnumerable<object?>? results = result.GetValue()?.ToList();
-                    if (results == null) return;
-                    foreach (var r in results)
+                    if (valuesWithIndices == null || !valuesWithIndices.Any()) return;
+
+                    // Записываем каждое значение в выходную структуру
+                    foreach (var (value, indices) in valuesWithIndices)
                     {
-                        Console.WriteLine($"Prepared_Result_[{mappConfig.Dependencies.IndexOf(dependency)}] - {dependency.GetFullInputPath()}[{results.ToList().IndexOf(r)}]: {r}");
+                        string indicesStr = indices.Any() ? $"[{string.Join(",", indices)}]" : "";
+                        Console.WriteLine($"Mapping: {dependency.GetFullInputPath()}{indicesStr} = {value} -> {dependency.GetFullOutputPath()}");
+                        outputStruct.SetValueStruct(dependency.OutputPath, value, indices, syncLock);
                     }
                 }
                 catch (Exception ex)
                 {
-                    Console.WriteLine($"Exception: {ex.Message}\n{ex.StackTrace}\n{ex.InnerException?.Message}\n{ex.InnerException?.Message}");
+                    Console.WriteLine($"Exception: {ex.Message}\n{ex.StackTrace}");
                 }
             });
-            Console.WriteLine("###########_InputFields_Finish_###############");
+
+            Console.WriteLine("###########_Mapping_Finish_###############");
             return outputStruct;
         }
     }
